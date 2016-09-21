@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<script type="text/javascript" src="carte.js">
+</script>
+
+
+<BODY>
+
+    <TABLE id="table1">
+
+        <TR>
+            <TD colspan=2>
+                <div id="DivDebug">
+                    <table id="table2">
+                        <TR>
+                            <TD> Nbr Gagner : </TD>
+                            <TD id="NbrGagner">&nbsp;&nbsp;</TD>
+                            <TD> Valeurs Aléatoire: </TD>
+                            <TD id="MSG">&nbsp;&nbsp;</TD>
+                        </TR>
+                        <TR>
+                            <TD> Tentatives : </TD>
+                            <TD id="Try">&nbsp;&nbsp;</TD>
+                            <TD> Paires Ok : </TD>
+                            <TD id="paires">&nbsp;&nbsp;</TD>
+                        </TR>
+                    </table>
+                </div>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <label for="tempo"> Niveaux de Difficulté </label>
+                <select id="tempo" onchange="Tempor = this[this.selectedIndex].value;">
+                    <option value=1500>Facile</option>
+                    <option value=1000 selected>Moyen</option>
+                    <option value=500>Dur</option>
+                    <option value=200>Trés Dur</option>
+                </select>
+            </TD>
+            <TD>
+                <input id="Rejouer" type="button" value="Rejouer" onclick="InitCarte();" disabled>
+            </TD>
+        </TR>
+    </TABLE>
+    <br>
+    <TABLE id="table3">
+
+        <TBODY id=TabCarte>
+            <tr>
+                <td id="0" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="1" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="2" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="3" onclick="Jouer(this)" class=Back>&nbsp;</td>
+            </tr>
+            <tr>
+                <td id="4" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="5" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="6" onclick="Jouer(this)" class=Back>&nbsp;</td>
+                <td id="7" onclick="Jouer(this)" class=Back>&nbsp;</td>
+            </tr>
+        </TBODY>
+
+    </TABLE>
+
+</BODY>
+
+</HTML>
