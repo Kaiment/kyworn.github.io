@@ -1,0 +1,18 @@
+body {
+  background-color: rgb(68, 96, 134);
+  max-height: 50em;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-top: 20%;
+  margin-left: 30%;
+}
+body h1 {
+  color: white;
+}
+body p {
+  color:rgb(204, 204, 204);
+}
+body img {
+  width: 5%;
+  margin-top: 5%;
+  margin-left: 25%;
+}
