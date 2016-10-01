@@ -2,7 +2,6 @@
     background-color: #eaeaea;
     padding: 10px;
     margin: -10px;
-    font-family: Droid sans;
     text-decoration: none;
 }
 #Header {
@@ -17,6 +16,7 @@ a {
     color: grey;
 }
 body {
+  font-family: 'Roboto Condensed', sans-serif;
     background-color: #efefef
 }
 .box {
@@ -26,13 +26,10 @@ body {
 }
 .Description1 {
     padding: 20px;
-    font-family: Oswald;
-    margin: -10px;
     font-size: 30px;
-    margin-left: 60px;
+    margin-left: 4.5%;
 }
 .Description2 {
-    font-family: Oswald;
     font-size: 15px;
     padding: 20px;
     margin: -10px;
@@ -51,7 +48,7 @@ hr {
     border: 0;
     height: 1px;
     margin: 0px;
-    margin-left: 80px;
+    margin-left: 5.5%;
 }
 img {
     vertical-align: top;
