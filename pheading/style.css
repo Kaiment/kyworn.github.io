@@ -1,0 +1,63 @@
+#Header {
+  background-color: black;
+  padding: 10px ;
+  margin: -10px;
+  font-family: Droid sans;
+
+}
+a  {
+  text-decoration: none;
+  color: grey;
+}
+/* Description De la page */
+.Description1 {
+  padding: 40px;
+  font-family: Oswald;
+  margin: -10px;
+  font-size: 20px;
+}
+.Description2 {
+  font-family: Oswald;
+  font-size: 15px;
+  padding: 20px;
+  margin: -10px;
+  color: grey;
+}
+.Description1 p {
+  display: inline;
+}
+.Description2 p {
+  display: inline;
+}
+/*Descrpition De la page */
+
+.image {
+  margin-left: 20px;
+  float: left;
+}
+
+
+hr {
+  width: 50%;
+  align: left;
+  background:grey;
+  border:0;
+  height:1px;
+  margin: 20px;
+}
+
+.projet {
+  display: flex;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  width: 20px;
+  padding: 10px;
+  margin-top: -40px;
+}
+
+a {
+  padding-right: 10px;
+  margin-left: 100px;
+}

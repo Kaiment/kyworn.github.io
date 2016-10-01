@@ -1,0 +1,60 @@
+#Header {
+    background-color: #eaeaea;
+    padding: 10px;
+    margin: -10px;
+    font-family: Droid sans;
+    text-decoration: none;
+}
+#Header {
+    text-decoration: none;
+    color: white;
+}
+.texteheader {
+    margin-left: 100px;
+}
+a {
+    text-decoration: none;
+    color: grey;
+}
+body {
+    background-color: #efefef
+}
+.box {
+    padding-top: 30px;
+    padding-left: 100px;
+    vertical-align: top;
+}
+.Description1 {
+    padding: 20px;
+    font-family: Oswald;
+    margin: -10px;
+    font-size: 30px;
+    margin-left: 60px;
+}
+.Description2 {
+    font-family: Oswald;
+    font-size: 15px;
+    padding: 20px;
+    margin: -10px;
+    color: grey;
+}
+.Description1 p {
+    display: inline;
+}
+.Description2 p {
+    display: inline;
+}
+hr {
+    width: 71%;
+    align: left;
+    background: grey;
+    border: 0;
+    height: 1px;
+    margin: 0px;
+    margin-left: 80px;
+}
+img {
+    vertical-align: top;
+    margin: 2px;
+    padding: 1px;
+}

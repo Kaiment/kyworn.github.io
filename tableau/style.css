@@ -1,0 +1,95 @@
+* {
+  font-family: Droid sans;
+}
+
+
+body {
+  background-color: green;
+
+
+}
+
+#header {
+  padding: 20px;
+  margin: 0px 0px 0px;
+  background-color: #4a4243;
+	font-size: 25px;
+	font-family: Droid sans;
+	color: white;
+  text-align: center;
+}
+
+#tableau {
+  margin: 10px 275px 0 ;
+	border-width: 1px;
+  border-style:solid;
+  border-color:grey;
+  width:50%;
+  border
+
+}
+
+p {
+	padding: 0px;
+
+}
+
+#description {
+	padding: 0px;
+	margin: 10px 275px 0 ;
+  color: white;
+}
+/* Slider kebab début*/
+@keyframes slidy {
+0% { left: 0%; }
+5% { left: -5%; }
+10% { left: -10%;}
+15% { left: -15%;}
+20% { left: -20%; }
+25% { left: -25%; }
+30% { left: -30%; }
+35% { left: -35%;}
+40% { left: -40%;}
+45% { left: -45%; }
+50% { left: -50%; }
+55% { left: -55%; }
+60% { left: -60%; }
+65% { left: -65%;}
+70% { left: -70%;}
+75% { left: -75%;}
+80% { left: -80%;}
+85% { left: -85%;}
+90% { left: -90%;}
+95% { left: -95%;}
+100% { left: -100%;}
+from {left : 0px;}
+
+
+}
+
+
+body { margin: 0; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 10000ms slidy infinite;
+
+
+}
+/* Slier kebab fin*/
+
+tbody {
+  text-align: center;
+  background-color: white;
+}
+
+thead {
+  background-color: grey;
+
+}
