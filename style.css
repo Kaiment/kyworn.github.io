@@ -30,6 +30,7 @@ h3 {
   color: rgb(134, 195, 196);
 }
 h4 {
+  margin-top: 10%;
   color: rgb(151, 214, 215);
 }
 #content img {
@@ -38,6 +39,7 @@ h4 {
 }
 #content a {
   text-decoration: none;
+  padding-bottom: 5em;
   color: rgb(154, 233, 236);
 }
 #content a:hover {
