@@ -1,95 +1,57 @@
-* {
-  font-family: Droid sans;
-}
-
-
 body {
-  background-color: green;
-
-
+    max-width: 45em;
+    margin: 0px auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(255, 240, 186);
 }
-
-#header {
-  padding: 20px;
-  margin: 0px 0px 0px;
-  background-color: #4a4243;
-	font-size: 25px;
-	font-family: Droid sans;
-	color: white;
-  text-align: center;
+body li {
+    list-style-type: none;
 }
-
-#tableau {
-  margin: 10px 275px 0 ;
-	border-width: 1px;
-  border-style:solid;
-  border-color:grey;
-  width:50%;
-  border
-
+#contenuglobal {
+    background-color: white;
+    padding-bottom: 10%;
 }
-
-p {
-	padding: 0px;
-
+#contenuglobal img {
+    width: 100%;
 }
-
-#description {
-	padding: 0px;
-	margin: 10px 275px 0 ;
-  color: white;
+header {
+    color: white;
+    font-size: 2em;
+    background: orange;
+    border: solid;
+    max-width: 100%;
+    border-color: orange;
 }
-/* Slider kebab début*/
-@keyframes slidy {
-0% { left: 0%; }
-5% { left: -5%; }
-10% { left: -10%;}
-15% { left: -15%;}
-20% { left: -20%; }
-25% { left: -25%; }
-30% { left: -30%; }
-35% { left: -35%;}
-40% { left: -40%;}
-45% { left: -45%; }
-50% { left: -50%; }
-55% { left: -55%; }
-60% { left: -60%; }
-65% { left: -65%;}
-70% { left: -70%;}
-75% { left: -75%;}
-80% { left: -80%;}
-85% { left: -85%;}
-90% { left: -90%;}
-95% { left: -95%;}
-100% { left: -100%;}
-from {left : 0px;}
-
-
+#tabletitle table {
+    font-family: sans-serif;
+    font-size: 1em;
 }
-
-
-body { margin: 0; }
-div#slider { overflow: hidden; }
-div#slider figure img { width: 20%; float: left; }
-div#slider figure {
-  position: relative;
-  width: 300%;
-  margin: 0;
-  left: 0;
-  text-align: left;
-  font-size: 0;
-  animation: 10000ms slidy infinite;
-
-
+#tabletitle #tableau {
+    border: solid 1.5px;
+    border-bottom: none;
+    border-color: rgb(223, 223, 223);
+    top: 0;
+    left: 0;
+    width: 98%;
+    margin-left: 1%;
+    text-align: center;
+    background: #f6f6f6;
 }
-/* Slier kebab fin*/
-
-tbody {
-  text-align: center;
-  background-color: white;
+#tabletitle p {
+    margin-left: 25px;
 }
-
-thead {
-  background-color: grey;
-
+#tablecontent table {
+    font-family: sans-serif;
+    font-size: 1em;
+}
+#tablecontent #tableau {
+    border: solid 1.5px;
+    border-top: none;
+    border-color: rgb(223, 223, 223);
+    top: 0;
+    left: 0;
+    width: 98%;
+    margin-left: 1%;
+    text-align: center;
+    background: white;
 }
