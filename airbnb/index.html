@@ -4,17 +4,32 @@
   <head>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" type="text/css">
-    <link href='font/DroidSans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Air BnB</title>
   </head>
   <body>
-          <img src="image/banner.gif" alt="" />
+    <div class="video">
+      <img src="image/banner.gif" alt="" />
+    </div>
+          <div class="header">
+            <div class="logo">
+              <img src="image/logo.png" alt="">
+            </div>
+            <div class="nav-link">
+              <a href="#">Devenez hôte</a>
+              <a href="#">Aide</a>
+              <a href="#">Inscription</a>
+              <a href="#">Connexion</a>
+            </div>
+          </div>>
+          <section>
           <div id="formulaire">
             <form method="post">
-            <fieldset>
+              <div class="formulaire-champ">
               <input type="text" placeholder=" Où ?"/>
-              <input value="Arrivée     "/>
-              <input value="→	                 Départ"/>
+              <input placeholder="Arrivée" value/>
+              <input type="text" name="" value="→">
+              <input placeholder="Départ"/>
               <select class="listeair">
                 <option>1 voyageur</option>
                 <option>2 voyageurs</option>
@@ -34,36 +49,36 @@
                 <option>16+ voyageurs</options>
               </select>
               <button id="rechercher" type="button">Rechercher</button>
-            </fieldset>
+            </div>
             </form>
           </div>
-          <div id="grande">
+
+
+          <div id="revenu">
             <img src="image/bnb.png"/>
-            <hr>
-              <h1>Ouvrez la porte à un voyageur et a une nouvelle vie</h1>
+            <div id="revenu-text">
+              <h1>Ouvrez la porte à un <br>voyageur et a une <br>nouvelle vie</h1>
               <p>Gagnez de l'argent en acceuillant des voyageurs.</p>
+                <a href="index.html" class="myButton">Estimer mes revenus</a>
             </div>
-            <div id="myButton">
-              <a href="index.html" class="myButton">Estimer mes revenus</a>
           </div>
-          <div id="text">
+
+          <div id="lieu">
             <h1>Juste pour le week-end</h1>
             <p>Découvrez de nouveaux logements incroyables près de chez vous.</p>
           </div>
-          <div id="mini">
+          <div id="lieu-description">
+            <h1>DESCRIPTION1</h1>
+            <h1>DESCRIPTION2</h1>
+            <h1>DESCRIPTION3</h1>
+          </div>
+          <div id="lieu-img">
             <img src="image/mini1.jpg" />
             <img src="image/mini2.jpg" />
             <img src="image/mini3.jpg" />
           </div>
-          <div id="minit1">
-            <h1>DESCRIPTION1</h1>
-          </div>
-          <div id="minit2">
-            <h1>DESCRIPTION2</h1>
-          </div>
-          <div id="minit3">
-            <h1>DESCRIPTION3</h1>
-          </div>
+        </section>
+
 
   </body>
 </html>
