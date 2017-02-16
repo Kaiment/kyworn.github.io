@@ -4,10 +4,11 @@ body {
   font-size: 1em;
   max-width: 40em;
   margin-top: 15em;
+  background-color:black; 
 }
 #Presentation {
   display: flex;
-  background-color: rgb(222, 222, 222);
+  background-color: white;
   justify-content: space-around;
   border-bottom: solid 2px rgb(233, 233, 233);
 }
