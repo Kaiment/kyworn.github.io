@@ -1,0 +1,249 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+
+
+
+ .skillbar {
+ 	position:relative;
+ 	display:block;
+ 	margin-bottom:15px;
+ 	width:100%;
+ 	background:#eee;
+ 	height:35px;
+ 	border-radius:3px;
+ 	-moz-border-radius:3px;
+ 	-webkit-border-radius:3px;
+ 	-webkit-transition:0.4s linear;
+ 	-moz-transition:0.4s linear;
+ 	-ms-transition:0.4s linear;
+ 	-o-transition:0.4s linear;
+ 	transition:0.4s linear;
+ 	-webkit-transition-property:width, background-color;
+ 	-moz-transition-property:width, background-color;
+ 	-ms-transition-property:width, background-color;
+ 	-o-transition-property:width, background-color;
+ 	transition-property:width, background-color;
+ }
+
+ .skillbar-title {
+ 	position:absolute;
+ 	top:0;
+ 	left:0;
+ width:110px;
+ 	font-weight:bold;
+ 	font-size:13px;
+ 	color:#ffffff;
+ 	background:#6adcfa;
+ 	-webkit-border-top-left-radius:3px;
+ 	-webkit-border-bottom-left-radius:4px;
+ 	-moz-border-radius-topleft:3px;
+ 	-moz-border-radius-bottomleft:3px;
+ 	border-top-left-radius:3px;
+ 	border-bottom-left-radius:3px;
+ }
+
+ .skillbar-title span {
+ 	display:block;
+ 	background:rgba(0, 0, 0, 0.1);
+ 	padding:0 20px;
+ 	height:35px;
+ 	line-height:35px;
+ 	-webkit-border-top-left-radius:3px;
+ 	-webkit-border-bottom-left-radius:3px;
+ 	-moz-border-radius-topleft:3px;
+ 	-moz-border-radius-bottomleft:3px;
+ 	border-top-left-radius:3px;
+ 	border-bottom-left-radius:3px;
+ }
+
+ .skillbar-bar {
+ 	height:35px;
+ 	width:0px;
+ 	background:#6adcfa;
+ 	border-radius:3px;
+ 	-moz-border-radius:3px;
+ 	-webkit-border-radius:3px;
+ }
+
+ .skill-bar-percent {
+ 	position:absolute;
+ 	right:10px;
+ 	top:0;
+ 	font-size:11px;
+ 	height:35px;
+ 	line-height:35px;
+ 	color:#ffffff;
+ 	color:rgba(0, 0, 0, 0.4);
+ }
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  @@media only screen and (min-width: 1000px){
+
+  }
+
+  @media only screen and (max-width : 992px) {
+    .parallax-container .section {
+      position: absolute;
+      top: 40%;
+    }
+    #index-banner .section {
+      top: 10%;
+    }
+    .button_mobile {
+      display: inline-block;
+    }
+  }
+
+  @media only screen and (max-width : 600px) {
+    #index-banner .section {
+      top: 0;
+    }
+    .button_mobile {
+      display: inline-block;
+    }
+  }
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+button {
+  border: none;
+  position: fixed;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+.nav-name {
+  font-size:2em; margin-left:1%;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+}
+
+.timeline .timeline-event {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.timeline .timeline-event .timeline-content {
+  position: relative;
+  width: calc(50% - 50px);
+}
+
+.timeline .timeline-event::before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: 0;
+}
+
+.timeline .timeline-event::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: calc(50% - 30px);
+  position: absolute;
+  background: #d2d2d2;
+  left: calc(50% - 1px);
+  top: calc(50% + 30px);
+}
+
+.timeline .timeline-event:first-child::before {
+  display: none;
+}
+
+.timeline .timeline-event:last-child::after {
+  display: none;
+}
+
+.timeline .timeline-event:nth-child(even) .timeline-content {
+  margin-left: calc(50% + 50px);
+}
+
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+  margin-left: 0;
+}
+
+.timeline .timeline-badge {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #d2d2d2;
+  top: calc(50% - 20px);
+  right: calc(50% - 20px);
+  border-radius: 50%;
+  text-align: center;
+  cursor: default;
+}
+
+.timeline .timeline-badge i {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+@media (max-width: 600px) {
+  .timeline .timeline-event .timeline-content {
+    width: calc(100% - 70px);
+  }
+  .timeline .timeline-event::before {
+    left: 19px;
+  }
+  .timeline .timeline-event::after {
+    left: 19px;
+  }
+  .timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 70px;
+  }
+  .timeline .timeline-badge {
+    left: 0;
+  }
+}

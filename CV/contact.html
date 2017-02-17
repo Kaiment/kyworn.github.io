@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/contact.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <div class="col s12 m7">
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="http://lorempixel.com/100/190/nature/6">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>Vous recherchez à me contacter ?!</p>
+                </div>
+                <div class="card-action">
+                    <button class="btn waves-effect waves-light" onclick="test()"><i class="material-icons">mail</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="form-contact">
+        <div class="row">
+            <form action="contact.php" class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" name="pseudo" class="validate" placeholder="Nom / Société">
+                        <label for="icon_prefix" </label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mail</i>
+                        <input id="email" type="email" name="email" class="validate" placeholder="Email">
+                        <label for="email" data-error="wrong" data-success="right"></label>
+                    </div>
+                </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">clear_all</i>
+                <input id="icon_prefix" type="text" name="objet" class="validate" placeholder="Objet">
+                <label for="icon_prefix" </label>
+            </div>
+        </div>
+        <div class="input-field col s12">
+            <textarea id="textarea1" class="materialize-textarea" name="message" placeholder="Votre message ! :D"></textarea>
+            <label for="textarea1"></label>
+        </div>
+    <input type="submit" name="valider" value="OK" />
+    </form>
+</div>
+</body>
+
+</html>
+<script type="text/javascript">
+    function test() {
+        document.getElementById('form-contact').style.display = 'block';
+    }
+</script>
