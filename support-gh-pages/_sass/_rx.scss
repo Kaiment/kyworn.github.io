@@ -1,0 +1,124 @@
+/**
+ * Site header
+ */
+.site-header {
+  /*background: #2a2c2d;*/
+}
+
+.site-title{
+  color:$grey-color-dark;
+  background: url("../img/logo_smplyon_h.png") no-repeat no-repeat center left;
+  padding-left: 120px;
+}
+
+
+
+a, a:hover{
+  color:#00BCD4;
+
+  &:visited{
+    color:$brand-color-dark;
+  }
+}
+
+.site-nav{
+  border: 0px;
+}
+
+.post-content {
+  h2{
+    color:#E91E63;
+  }
+
+  h3{
+    margin-top: 10px;
+  }
+}
+
+.site-footer {
+  h2{
+    color:$grey-color;
+  }
+}
+
+
+
+details{
+  background: #eef2f4;
+  margin : 14px 0;
+  padding : 8px
+}
+
+details[open]{
+  background: #f0f0f0;
+}
+summary:focus{
+  outline:none;
+}
+
+#top-menu{
+
+  text-align: right;
+  cursor: pointer;
+
+  li{
+    /*display: inline-block;*/
+    list-style: none;
+  }
+
+  #menu-container{
+    /*width: 120px;*/
+    display: none;
+    position: absolute;
+    margin-left:0;
+    text-align: left;
+
+    li{
+      padding: 10px;
+      margin:0;
+      /*border: #E91E63 1px solid ;*/
+      /*background-color: #E91E63;*/
+      background-color: #00BCD4;
+      color: #fff;
+      font-size:0.9rem;
+      line-height: 20px;
+
+      &:hover{
+        background-color: $brand-color-dark;
+      }
+
+      a, a:link, a:hover,a:visited{
+        color:#fff;
+      }
+    }
+
+  }
+
+  &:hover{
+    #menu-container{
+      display: block;
+    }
+  }
+
+}
+
+
+@media screen and (max-width:480px) {
+  .site-title{
+    background: url("../img/logo_smplyon_h.png") no-repeat no-repeat top left;
+    background-position-y: 14px;
+    padding-top: 30px;
+    padding-left: 0;
+    font-size: 1.1rem;
+  }
+
+  #menu-container {
+    right: 0;
+    width: 200px;
+  }
+
+  #menu-container li a{
+    font-size: 1.3rem;
+
+  }
+}
