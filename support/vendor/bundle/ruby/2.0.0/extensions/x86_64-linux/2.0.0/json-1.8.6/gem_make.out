@@ -1,0 +1,10 @@
+/home/server/.rvm/rubies/ruby-2.0.0-p648/bin/ruby -r ./siteconf20170320-17956-zjltj.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+make: rien à faire pour « all ».
+
+make "DESTDIR=" install
+installing default libraries

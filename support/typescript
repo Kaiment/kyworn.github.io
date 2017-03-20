@@ -1,0 +1,662 @@
+Le script a débuté sur lun. 20 mars 2017 15:07:08 CET
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ cd s[K[K[K[Kscript b[K[K:[K/jekyll
+bash: script/jekyll: Aucun fichier ou dossier de ce type
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ jekyll --version
+WARN: Unresolved specs during Gem::Specification.reset:
+      jekyll-watch (~> 1.1)
+      rouge (~> 1.7)
+WARN: Clearing out unresolved specs.
+Please report a bug if this causes problems.
+/var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/resolver.rb:386:in `block in verify_gemfile_dependencies_are_found!': Could not find gem 'github-pages' in any of the gem sources listed in your Gemfile. (Bundler::GemNotFound)
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/resolver.rb:356:in `each'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/resolver.rb:356:in `verify_gemfile_dependencies_are_found!'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/resolver.rb:203:in `start'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/resolver.rb:182:in `resolve'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/definition.rb:252:in `resolve'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/definition.rb:176:in `specs'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/definition.rb:235:in `specs_for'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/definition.rb:224:in `requested_specs'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/runtime.rb:118:in `block in definition_method'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler/runtime.rb:19:in `setup'
+	from /var/lib/gems/2.3.0/gems/bundler-1.14.6/lib/bundler.rb:100:in `setup'
+	from /var/lib/gems/2.3.0/gems/jekyll-3.4.2/lib/jekyll/plugin_manager.rb:36:in `require_from_bundler'
+	from /var/lib/gems/2.3.0/gems/jekyll-3.4.2/exe/jekyll:9:in `<top (required)>'
+	from /usr/local/bin/jekyll:22:in `load'
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ gem uninstall jekyll
+
+You have requested to uninstall the gem:
+	jekyll-3.4.2
+
+jekyll-feed-0.9.1 depends on jekyll (~> 3.3)
+jekyll-github-metadata-2.3.1 depends on jekyll (~> 3.1)
+jekyll-redirect-from-0.12.1 depends on jekyll (~> 3.3)
+jekyll-seo-tag-2.1.0 depends on jekyll (~> 3.3)
+jekyll-sitemap-1.0.0 depends on jekyll (~> 3.3)
+jekyll-swiss-0.4.0 depends on jekyll (~> 3.2, development)
+minima-2.1.0 depends on jekyll (~> 3.3)
+minima-2.0.0 depends on jekyll (~> 3.2, development)
+If you remove this gem, these dependencies will not be met.
+Continue with Uninstall? [yN]  
+ERROR:  While executing gem ... (Gem::DependencyRemovalException)
+    Uninstallation aborted due to dependent gem(s)
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ gem uninstall jekyll[1@s[1@u[1@d[1@o[1@ 
+[sudo] Mot de passe de server : 
+
+You have requested to uninstall the gem:
+	jekyll-3.4.2
+
+jekyll-feed-0.9.1 depends on jekyll (~> 3.3)
+jekyll-github-metadata-2.3.1 depends on jekyll (~> 3.1)
+jekyll-redirect-from-0.12.1 depends on jekyll (~> 3.3)
+jekyll-seo-tag-2.1.0 depends on jekyll (~> 3.3)
+jekyll-sitemap-1.0.0 depends on jekyll (~> 3.3)
+jekyll-swiss-0.4.0 depends on jekyll (~> 3.2, development)
+minima-2.1.0 depends on jekyll (~> 3.3)
+minima-2.0.0 depends on jekyll (~> 3.2, development)
+If you remove this gem, these dependencies will not be met.
+Continue with Uninstall? [yN]  y
+Successfully uninstalled jekyll-3.4.2
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using i18n 0.8.1
+[32mInstalling json 1.8.6 with native extensions[0m
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using public_suffix 2.0.5
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using colorator 1.1.0
+[32mInstalling ffi 1.9.18 with native extensions[0m
+Using multipart-post 2.0.0
+Using forwardable-extended 2.6.0
+Using gemoji 3.0.0
+Using net-dns 0.8.0
+Using sass 3.4.23
+Using rb-fsevent 0.9.8
+Using kramdown 1.13.2
+Using liquid 3.0.6
+Using mercenary 0.3.6
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Using mini_portile2 2.1.0
+Using jekyll-paginate 1.1.0
+Using jekyll-swiss 0.4.0
+Using minima 2.0.0
+Using unicode-display_width 1.1.3
+Using bundler 1.14.6
+[31mErrno::EACCES: Permission denied @ rb_sysopen -
+/opt/lampp/htdocs/support/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/tests/test_json.rb
+[0m[0m[31mAn error occurred while installing json (1.8.6), and Bundler cannot continue.
+Make sure that `gem install json -v '1.8.6'` succeeds before bundling.[0m[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ jekyll
+/usr/local/bin/jekyll:22:in `load': cannot load such file -- /usr/share/rubygems-integration/all/gems/jekyll-3.0.1/bin/jekyll (LoadError)
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ jekyll --version
+/usr/local/bin/jekyll:22:in `load': cannot load such file -- /usr/share/rubygems-integration/all/gems/jekyll-3.0.1/bin/jekyll (LoadError)
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm
+<a href="https://www.bountysource.com/teams/rvm?utm_source=RVM&utm_medium=shield&utm_campaign=raised"><img src="https://api.bountysource.com/badge/team?team_id=506&style=raised" align="center"></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+Master
+<a href="https://travis-ci.org/rvm/rvm/branches"><img src="https://travis-ci.org/rvm/rvm.svg?branch=master" align="center"></a>
+
+# What's RVM
+
+RVM is the acronym of Ruby enVironment Manager. It manages Ruby application environments and enables switching between them.
+
+Homepage and more info: https://rvm.io/
+
+## Installing RVM
+
+### Ubuntu
+
+RVM have dedicated Ubuntu package, so please follow instructions posted here: https://github.com/rvm/ubuntu_rvm
+ 
+If you need a different (newer) version of RVM, after installing base version of RVM check the [Upgrading](#upgrading) section below. 
+
+### Any other operating system
+
+Make sure you have following required packages installed:
+
+* `curl`
+
+And then run:
+
+`\curl -sSL https://get.rvm.io | bash -s stable`
+
+### Additional installation options
+
+Additional installation options and details about the installation process are described here: https://rvm.io/rvm/install
+
+## Upgrading RVM
+
+You can upgrade RVM any time by running:
+ 
+`rvm get VERSION`
+
+Where `VERSION` should be replaced by one of the following values:
+
+* `stable`              - latest stable RVM (good for servers)
+* `master`              - latest RVM (might not be stable)
+* `branch /path/branch` - branched version of RVM (for testing new features or bug fixes)
+
+Additional upgrading options are described here: https://rvm.io/rvm/upgrading
+
+## Basic RVM usage
+
+Basic RVM usage scenarios include installing and switching between different ruby versions.
+
+### Installing ruby
+
+To install ruby you have to call `rvm install INTERPRETER[-VERSION] OPTIONS` 
+
+When no version specified, RVM will install latest stable version or selected interpreter. If you omit to specify interpreter, RVM will assume
+that you wanted to install MRI ruby. Following examples would have exactly the same effect:    
+
+```
+rvm install ruby-2.3.1
+rvm install ruby-2.3
+rvm install 2.3.1
+rvm install 2.3
+```
+
+Passing additional `--default` option makes selected ruby your default. 
+
+We currently supported following ruby interpreters:
+
+* `ruby`       - MRI ruby (The Gold Standard)
+* `ironruby`   - a .NET ruby
+* `jruby`      - Java implementation of the ruby
+* `macruby`    - implementation of ruby 1.9 directly on top of macOS core technologies 
+* `maglev`     - 64-bit implementation on top of VMware's GemStone
+* `mruby`      - lightweight ruby
+* `opal`       - ruby to JavaScript compiler
+* `rbx`        - Rubinius - a next generation virtual machine VM for ruby
+* `topaz`      - high performance ruby, written in RPython
+
+Historical interpreters which you can still install with RVM, but are not anymore developed and supported by their authors:
+
+* `ree`        - Ruby Enterprise Edition - MRI Ruby with several custom patches for performance, stability, and memory
+
+### Switching between ruby versions
+
+To switch between ruby versions you should call
+
+`rvm use INTERPRETER[-VERSION]`
+
+Same rules and options apply as for `install` command with two special _interpreters_. 
+
+* `default`    - [default](https://rvm.io/rubies/default/) ruby (or the system ruby if a default hasn't been set)
+* `system`     - system ruby (state before RVM was installed)
+
+Additionally you might want list your preferred ruby version in `.ruby-version` file stored in your project folder. This would cause automatic switch to selected ruby whenever you enter the folder.  
+
+### Other RVM commands
+
+RVM comes bundled with many different tools for managing your ruby environment. More detailed information about every commands listed below can be read after executing `rvm help COMMAND` or browsing documentation on RVM homepage https://rvm.io/.
+
+#### Installation
+
+* `implode`              - removes the rvm installation completely. This means everything in `$rvm_path` (`~/.rvm` || `/usr/local/rvm`). This does not touch your profiles. However, this means that you must manually clean up your profiles and remove the lines which source RVM
+* `install`              - [install](https://rvm.io/rubies/installing/) one or many ruby versions
+* `list`                 - show currently installed rubies, interactive output - https://rvm.io/rubies/list/
+* `mount`                - install rubies from external locations
+* `patchset`             - tools related to managing ruby patchsets
+* `pkg`                  - install a dependency package `{readline,iconv,zlib,openssl}` - https://rvm.io/packages/
+* `reinstall`            - reinstall ruby and runs `gem pristine` on all gems. Make sure to read output. Use `all` for all rubies
+* `reload`               - reload rvm source itself (useful after changing rvm source).
+* `remove`               - uninstall one or many ruby versions and remove their sources
+* `requirements`         - installs additional OS specific dependencies/requirements for building various rubies (by default run by `install`)
+* `reset`                - remove current and stored default & system settings
+* `snapshot`             - lets you backup / restore an rvm installation in a lightweight manner
+* `uninstall`            - uninstall one or many ruby versions, keeping their sources
+* `upgrade`              - lets you upgrade from one version of a ruby to another, including migrating your gemsets semi-automatically
+
+#### Running different ruby versions
+
+* `do`                   - runs an arbitrary command against specified and/or all rubies
+* `use`                  - setup current shell to use a specific ruby version
+
+#### Managing gemsets
+
+* `gemset`               - manage [gemsets](https://rvm.io/gemsets/) 
+* `migrate`              - lets you migrate all gemsets from one ruby to another
+
+#### Configuration
+
+* `alias`                - define aliases for `rvm use`
+* `autolibs`             - control settings for installing dependencies automatically
+* `current`              - print the current ruby version and the name of any gemset being used
+* `gemdir`               - display the path to the current gem directory (`GEM_HOME`)
+* `group`                - tools for managing groups in multiuser installations
+* `rvmrc`                - tools related to managing `.rvmrc` trust and loading
+* `wrapper`              - generates a set of wrapper executables for a given ruby with the specified ruby and gemset combination. Used under the hood for passenger support and the like
+
+#### Maintenance
+
+* `cleanup`              - remove stale source folders / archives and other miscellaneous data associated with rvm
+* `cron`                 - manage setup for using ruby in cron
+* `disk-usage`           - display disk space occupied by RVM
+* `docs`                 - tools to make installing ri and rdoc documentation easier
+* `fetch`                - download binary or sources for selected ruby version
+* `get`                  - upgrades RVM to latest head, stable or branched version
+* `osx-ssl-certs`        - helps update certificates for OpenSSL installed by rvm on OSX
+
+#### Troubleshooting
+
+* `config-get`           - display values for `RbConfig::CONFIG` variables
+* `debug`                - show additional information helping to discover common issues
+* `export`               - temporarily set an environment variable in the current shell
+* `fix-permissions`      - repairs broken permissions
+* `repair`               - lets you repair parts of your environment e.g. wrappers, env files and similar (e.g. general maintenance)
+* `rubygems`             - switches the installed version of rubygems for the current ruby
+* `tools`                - provides general information about the ruby environment, primarily useful when scripting rvm
+* `unexport`             - undo changes made to the environment by `rvm export`
+* `user`                 - tools for managing RVM mixed mode in multiuser installations
+
+#### Information and documentation
+
+* `info`                 - show the environment information for current ruby
+* `notes`                - display notes with operating system specifics
+* `usage`                - list available commands and their usage info (content of this README)
+* `version`              - display rvm version (equal to `rvm -v`) 
+
+### Additional global options
+
+* `--debug`           - toggle debug mode on for very verbose output
+* `--trace`           - toggle trace mode on to see EVERYTHING rvm is doing
+* `--nice`            - process niceness (increase the value on slow computers, default `0`)
+* `-v` | `--version`  - display rvm version loaded for current shell
+
+
+## Reporting issues
+
+Here at RVM we get a high amount of bug reports, and often they are connected 
+with specific environment settings which might be hard for us to replicate. 
+That's why we would kindly ask you to follow the steps below so we can maximize 
+our time helping you and minimize the time requesting more information.
+
+### Check documentation
+
+We know, you hear this over and over and be rest assured we are working hard to improve the
+usability of https://rvm.io but we must always ask that you first please check the documentation
+if you are requesting a feature or if you are not sure if you did it right.
+
+### Try again with latest RVM
+
+We try to release a new RVM as soon as we feel that we achieved certain stability. This might take
+a while and it could be the case that your issue has been already resolved in our development branch.
+Please get the latest RVM and try again:
+
+`rvm get master`
+
+### File an issue
+
+If the documentation is not clear, an error message is not clear or you are stuck with the problem,
+please do file a bug.
+
+When in doubt as to whether your issue might relate to another, simply file a new bug, and
+we will mark it as duplicate if it needs to be.  It's always better to file a new ticket and
+let us sort it out than to accidentally add noise to another ticket.
+
+For filing issues, we have prepared a template for you to use. Please try to fill all sections as best as you can.
+Always make sure to split up each command and its output into its own fenced code block. 
+If the output is long, please put it in a separate [gist](https://gist.github.com). 
+Otherwise it's hard for us to process all the information and respond quickly.
+
+Note that if there is a lot of `debug` or `trace` output you can redirect it to a file with the `>` 
+character like `rvm [command] > output.txt`.
+
+## Contributing
+
+You are very warmly welcome to help. Please follow our [contribution guidelines](CONTRIBUTING.md) 
+
+Any and all contributions offered in any form, past present or future are understood to be in complete agreement and acceptance with the [Apache License](LICENSE) v2.0.
+
+## License
+
+Copyright (C) Michal Papis (2011-2017), Piotr Kuczynski (2016-2017), Wayne E. Seguin (2009-2011) 
+
+Licensed under the [Apache License](LICENSE), Version 2.0
+[32m
+  Action documentation available with 'rvm help action-name':
+
+      alias autolibs cleanup config-get cron current debug disk-usage do docs fetch fix-permissions gemdir gemset gemset/copy get group implode info install list migrate mount notes osx-ssl-certs patchset pkg prepare reinstall remove repair requirements reset rubygems rvmrc rvmrc/to rvmrc/warning snapshot srcdir tools uninstall upgrade use user wrapper 
+
+  Other topics of documentation available with 'rvm help topic':
+
+      alt color upgrade-notes 
+  [0m
+[32m
+  For additional information please visit RVM's documentation website: https://rvm.io/
+  [0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm install
+[31mCan not use or install 'all' rubies.[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm install all
+[31mUnknown ruby interpreter version (do not know how to handle): all.[0m
+[33mAlready installed ruby-2.4.0.
+To reinstall use:
+
+    rvm reinstall ruby-2.4.0
+[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm get head && rvm reload
+[32mDownloading https://get.rvm.io[0m
+
+[32mDownloading https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer.asc[0m
+[32mVerifying /home/server/.rvm/archives/rvm-installer.asc[0m
+gpg: Signature faite le lun. 20 févr. 2017 15:05:42 CET avec la clef RSA d'identifiant BF04FF17
+gpg: Bonne signature de « Michal Papis (RVM signing) <mpapis@gmail.com> » [inconnu]
+gpg:                 alias « Michal Papis <michal.papis@toptal.com> » [inconnu]
+gpg:                 alias « [jpeg image of size 5015] » [inconnu]
+gpg: Attention : cette clef n'est pas certifiée avec une signature de confiance.
+gpg:          Rien n'indique que la signature appartient à son propriétaire.
+Empreinte de clef principale : 409B 6B17 96C2 7546 2A17  0311 3804 BB82 D39D C0E3
+     Empreinte de la sous-clef : 62C9 E5F4 DA30 0D94 AC36  166B E206 C29F BF04 FF17
+[32mGPG verified '/home/server/.rvm/archives/rvm-installer'[0m
+Downloading https://github.com/rvm/rvm/archive/master.tar.gz
+[32m
+Upgrading the RVM installation in /home/server/.rvm/[0m
+[32m    RVM PATH line found in /home/server/.mkshrc /home/server/.profile /home/server/.bashrc /home/server/.zshrc.[0m
+[32m    RVM sourcing line found in /home/server/.profile /home/server/.bash_profile /home/server/.zlogin.[0m
+[32mUpgrade of RVM in /home/server/.rvm/ is complete.[0m
+
+# server,
+#
+#   Thank you for using RVM!
+#   We sincerely hope that RVM helps to make your life easier and more enjoyable!!!
+#
+# ~Wayne, Michal & team.
+
+[33mIn case of problems: [32mhttps://rvm.io/help [33mand [32mhttps://twitter.com/rvm_io[0m
+
+Upgrade Notes:
+
+  * No new notes to display.
+
+RVM reloaded!
+RVM reloaded!
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ 
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle install --binstubs=./bundler_stubs
+
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+Using i18n 0.8.1
+[32mInstalling json 1.8.6 with native extensions[0m
+Using minitest 5.10.1
+Using thread_safe 0.3.6
+Using public_suffix 2.0.5
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using colorator 1.1.0
+[32mInstalling ffi 1.9.18 with native extensions[0m
+Using multipart-post 2.0.0
+Using forwardable-extended 2.6.0
+Using gemoji 3.0.0
+Using net-dns 0.8.0
+Using sass 3.4.23
+Using rb-fsevent 0.9.8
+Using kramdown 1.13.2
+Using liquid 3.0.6
+Using mercenary 0.3.6
+Using rouge 1.11.1
+Using safe_yaml 1.0.4
+Using mini_portile2 2.1.0
+Using jekyll-paginate 1.1.0
+Using jekyll-swiss 0.4.0
+Using minima 2.0.0
+Using unicode-display_width 1.1.3
+Using bundler 1.14.6
+[31mErrno::EACCES: Permission denied @ rb_sysopen -
+/opt/lampp/htdocs/support/vendor/bundle/ruby/2.3.0/gems/json-1.8.6/tests/test_json.rb
+[0m[0m[31mAn error occurred while installing json (1.8.6), and Bundler cannot continue.
+Make sure that `gem install json -v '1.8.6'` succeeds before bundling.[0m[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ 
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm use 2.0.0 --default
+
+[32m[0m
+[32mRVM is not a function, selecting rubies with '[31mrvm use ...[32m' will not work.[0m
+[33m
+You need to change your terminal emulator preferences to allow login shell.
+Sometimes it is required to use `/bin/bash --login` as the command.
+Please visit https://rvm.io/integration/gnome-terminal/ for an example.
+[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ 
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ /bin [K/bash --login
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm use 2.0.0 --default
+[31mruby-2.0.0-p648 is not installed.[0m
+[32mTo install do: 'rvm install ruby-2.0.0-p648'[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ 
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm install ruy[Kby([K-2.9.[K[K0.9O[K[K0-p649[K7[K8
+[32mSearching for binary rubies, this might take some time.[0m
+[32mFound remote file https://rvm_io.global.ssl.fastly.net/binaries/ubuntu/16.04/x86_64/ruby-2.0.0-p648.tar.bz2[0m
+[32mChecking requirements for ubuntu.[0m
+[32mRequirements installation successful.[0m
+[32mruby-2.0.0-p648 - #configure[0m
+[32mruby-2.0.0-p648 - #download[0m
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  6 20.3M    6 1292k    0     0   439k      0  0:00:47  0:00:02  0:00:45  439k100 20.3M  100 20.3M    0     0  5427k      0  0:00:03  0:00:03 --:--:-- 5427k
+[32mruby-2.0.0-p648 - #validate archive[0m
+[32mruby-2.0.0-p648 - #extract[0m
+[32mruby-2.0.0-p648 - #validate binary[0m
+[32mruby-2.0.0-p648 - #setup[0m
+[32mruby-2.0.0-p648 - #gemset created /home/server/.rvm/gems/ruby-2.0.0-p648@global[0m
+[32mruby-2.0.0-p648 - #importing gemset /home/server/.rvm/gemsets/global.gems[0m|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|..
+[32mruby-2.0.0-p648 - #generating global wrappers[0m|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/.
+[32mruby-2.0.0-p648 - #gemset created /home/server/.rvm/gems/ruby-2.0.0-p648[0m
+[32mruby-2.0.0-p648 - #importing gemsetfile /home/server/.rvm/gemsets/default.gems evaluated to empty gem list[0m
+[32mruby-2.0.0-p648 - #generating default wrappers[0m|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-\|/-.|/-\|/-\|.-\|/-.
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ rvm install ruby-2.0.0-p648[4Puse 2.0.0 --defaultexit[Knetstat -tulpnls[Ksudo grep 80[K[K[K[K[K[K[K[K[K[K[K[Kbundle install
+/usr/local/lib/site_ruby/2.3.0/rubygems.rb:270:in `find_spec_for_exe': can't find gem bundler (>= 0.a) (Gem::GemNotFoundException)
+	from /usr/local/lib/site_ruby/2.3.0/rubygems.rb:298:in `activate_bin_path'
+	from /usr/local/bin/bundle:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ ruby instal[K[Kal[K[K[K[K[K[K[K[K[K[K[Kgem install bundler
+Fetching: bundler-1.14.6.gemFetching: bundler-1.14.6.gem (  1%)Fetching: bundler-1.14.6.gem (  2%)Fetching: bundler-1.14.6.gem (  3%)Fetching: bundler-1.14.6.gem (  4%)Fetching: bundler-1.14.6.gem (  5%)Fetching: bundler-1.14.6.gem (  6%)Fetching: bundler-1.14.6.gem (  7%)Fetching: bundler-1.14.6.gem (  8%)Fetching: bundler-1.14.6.gem (  9%)Fetching: bundler-1.14.6.gem ( 10%)Fetching: bundler-1.14.6.gem ( 16%)Fetching: bundler-1.14.6.gem ( 21%)Fetching: bundler-1.14.6.gem ( 26%)Fetching: bundler-1.14.6.gem ( 31%)Fetching: bundler-1.14.6.gem ( 36%)Fetching: bundler-1.14.6.gem ( 41%)Fetching: bundler-1.14.6.gem ( 46%)Fetching: bundler-1.14.6.gem ( 51%)Fetching: bundler-1.14.6.gem ( 57%)Fetching: bundler-1.14.6.gem ( 62%)Fetching: bundler-1.14.6.gem ( 67%)Fetching: bundler-1.14.6.gem ( 72%)Fetching: bundler-1.14.6.gem ( 77%)Fetching: bundler-1.14.6.gem ( 82%)Fetching: bundler-1.14.6.gem ( 87%)Fetching: bundler-1.14.6.gem ( 93%)Fetching: bundler-1.14.6.gem ( 98%)Fetching: bundler-1.14.6.gem (100%)Fetching: bundler-1.14.6.gem (100%)
+Successfully installed bundler-1.14.6
+1 gem installed
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle install
+Fetching gem metadata from https://rubygems.org/...........
+Fetching version metadata from https://rubygems.org/..
+Fetching dependency metadata from https://rubygems.org/.
+Resolving dependencies...
+[32mInstalling i18n 0.8.1[0m
+[32mInstalling json 1.8.6 with native extensions[0m
+[32mInstalling minitest 5.10.1[0m
+[32mInstalling thread_safe 0.3.6[0m
+[32mInstalling public_suffix 2.0.5[0m
+[32mInstalling coffee-script-source 1.12.2[0m
+[32mInstalling execjs 2.7.0[0m
+[32mInstalling colorator 1.1.0[0m
+[32mInstalling ffi 1.9.18 with native extensions[0m
+[32mInstalling multipart-post 2.0.0[0m
+[32mInstalling forwardable-extended 2.6.0[0m
+[32mInstalling gemoji 3.0.0[0m
+[32mInstalling net-dns 0.8.0[0m
+[32mInstalling sass 3.4.23[0m
+[32mInstalling rb-fsevent 0.9.8[0m
+[32mInstalling kramdown 1.13.2[0m
+[32mInstalling liquid 3.0.6[0m
+[32mInstalling mercenary 0.3.6[0m
+[32mInstalling rouge 1.11.1[0m
+[32mInstalling safe_yaml 1.0.4[0m
+[32mInstalling mini_portile2 2.1.0[0m
+[32mInstalling jekyll-paginate 1.1.0[0m
+[32mInstalling jekyll-swiss 0.4.0[0m
+[32mInstalling minima 2.0.0[0m
+[32mInstalling unicode-display_width 1.1.3[0m
+Using bundler 1.14.6
+[32mInstalling tzinfo 1.2.2[0m
+[32mInstalling addressable 2.5.0[0m
+[32mInstalling coffee-script 2.4.1[0m
+[32mInstalling ethon 0.10.1[0m
+[32mInstalling rb-inotify 0.9.8[0m
+[32mInstalling faraday 0.11.0[0m
+[32mInstalling pathutil 0.14.0[0m
+[32mInstalling jekyll-sass-converter 1.5.0[0m
+[32mInstalling nokogiri 1.6.8.1 with native extensions[0m
+[32mInstalling terminal-table 1.7.3[0m
+[32mInstalling activesupport 4.2.7[0m
+[32mInstalling jekyll-coffeescript 1.0.1[0m
+[32mInstalling typhoeus 0.8.0[0m
+[32mInstalling listen 3.0.6[0m
+[32mInstalling sawyer 0.8.1[0m
+[32mInstalling html-pipeline 2.5.0[0m
+[32mInstalling jekyll-watch 1.5.0[0m
+[32mInstalling octokit 4.6.2[0m
+[32mInstalling jekyll 3.4.2[0m
+[32mInstalling github-pages-health-check 1.3.3[0m
+[32mInstalling jekyll-gist 1.4.0[0m
+[32mInstalling jekyll-avatar 0.4.2[0m
+[32mInstalling jekyll-default-layout 0.1.4[0m
+[32mInstalling jekyll-feed 0.9.1[0m
+[32mInstalling jekyll-github-metadata 2.3.1[0m
+[32mInstalling jekyll-mentions 1.2.0[0m
+[32mInstalling jekyll-optional-front-matter 0.1.2[0m
+[32mInstalling jekyll-readme-index 0.0.4[0m
+[32mInstalling jekyll-redirect-from 0.12.1[0m
+[32mInstalling jekyll-relative-links 0.3.0[0m
+[32mInstalling jekyll-seo-tag 2.1.0[0m
+[32mInstalling jekyll-sitemap 1.0.0[0m
+[32mInstalling jekyll-theme-architect 0.0.3[0m
+[32mInstalling jekyll-theme-cayman 0.0.3[0m
+[32mInstalling jekyll-theme-dinky 0.0.3[0m
+[32mInstalling jekyll-theme-hacker 0.0.3[0m
+[32mInstalling jekyll-theme-leap-day 0.0.3[0m
+[32mInstalling jekyll-theme-merlot 0.0.3[0m
+[32mInstalling jekyll-theme-midnight 0.0.3[0m
+[32mInstalling jekyll-theme-minimal 0.0.3[0m
+[32mInstalling jekyll-theme-modernist 0.0.3[0m
+[32mInstalling jekyll-theme-primer 0.1.7[0m
+[32mInstalling jekyll-theme-slate 0.0.3[0m
+[32mInstalling jekyll-theme-tactile 0.0.3[0m
+[32mInstalling jekyll-theme-time-machine 0.0.3[0m
+[32mInstalling jekyll-titles-from-headings 0.1.4[0m
+[32mInstalling jemoji 0.8.0[0m
+[32mInstalling github-pages 128[0m
+[32mBundle complete! 2 Gemfile dependencies, 74 gems now installed.[0m
+[32mBundled gems are installed into ./vendor/bundle.[0m
+[32mPost-install message from html-pipeline:[0m
+-------------------------------------------------
+Thank you for installing html-pipeline!
+You must bundle Filter gem dependencies.
+See html-pipeline README.md for more details.
+https://github.com/jch/html-pipeline#dependencies
+-------------------------------------------------
+[32mPost-install message from minima:[0m
+
+----------------------------------------------
+Thank you for installing minima 2.0!
+
+Minima 2.0 comes with a breaking change that
+renders '<your-site>/css/main.scss' redundant.
+That file is now bundled with this gem as
+'<minima>/assets/main.scss'.
+
+More Information:
+https://github.com/jekyll/minima#customization
+----------------------------------------------
+
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle exec jekyll serve
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+            Source: /opt/lampp/htdocs/support
+       Destination: /opt/lampp/htdocs/support/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 2.89 seconds.
+ Auto-regeneration: enabled for '/opt/lampp/htdocs/support'
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+    Server address: http://127.0.0.1:4000/support/
+  Server running... press ctrl-c to stop.
+^C^C]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle exec jekyll serve -p 8080
+
+La commande « undle » est introuvable, vouliez-vous dire :
+ La commande « bundle » du paquet « ruby-bundler » (universe)
+undle : commande introuvable
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ undle exec jekyll serve -p 8080[C[C[C[C[C[C[1P 8080[1P 8080
+La commande « undle » est introuvable, vouliez-vous dire :
+ La commande « bundle » du paquet « ruby-bundler » (universe)
+undle : commande introuvable
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ undle exec jekyll serve  8080[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+[0m[01;32mabout.md[0m       [01;32m_config.yml[0m  [01;32mfeed.xml[0m  Gemfile.lock  [34;42mimg[0m        [01;32mindex.html[0m  [34;42m_layouts[0m  [34;42m_posts[0m     [34;42m_sass[0m  typescript
+[01;34mbundler_stubs[0m  [34;42mcss[0m          [01;32mGemfile[0m   [01;32mgh-pages.iml[0m  [34;42m_includes[0m  [34;42mjs[0m          [34;42mpages[0m     [01;32mREADME.md[0m  [01;34m_site[0m  [01;34mvendor[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ cd r[K[K[K[Kjekyll serve
+/usr/local/lib/site_ruby/2.3.0/rubygems.rb:270:in `find_spec_for_exe': can't find gem jekyll (>= 0.a) (Gem::GemNotFoundException)
+	from /usr/local/lib/site_ruby/2.3.0/rubygems.rb:298:in `activate_bin_path'
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ jekyll servels[Kundle exec jekyll serve  8080[1@b[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- 8080p 8080
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+            Source: /opt/lampp/htdocs/support
+       Destination: /opt/lampp/htdocs/support/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 2.89 seconds.
+ Auto-regeneration: enabled for '/opt/lampp/htdocs/support'
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+    Server address: http://127.0.0.1:4000/support/
+  Server running... press ctrl-c to stop.
+^C]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ ^C
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ j,e[K[Kekyll s[Kserve
+/usr/local/lib/site_ruby/2.3.0/rubygems.rb:270:in `find_spec_for_exe': can't find gem jekyll (>= 0.a) (Gem::GemNotFoundException)
+	from /usr/local/lib/site_ruby/2.3.0/rubygems.rb:298:in `activate_bin_path'
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ jekyll serve ([K--port 999[K[K[K8888
+/usr/local/lib/site_ruby/2.3.0/rubygems.rb:270:in `find_spec_for_exe': can't find gem jekyll (>= 0.a) (Gem::GemNotFoundException)
+	from /usr/local/lib/site_ruby/2.3.0/rubygems.rb:298:in `activate_bin_path'
+	from /usr/local/bin/jekyll:22:in `<main>'
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ bundle exec jekyll serve --host 0.0.0.0
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+            Source: /opt/lampp/htdocs/support
+       Destination: /opt/lampp/htdocs/support/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 2.893 seconds.
+ Auto-regeneration: enabled for '/opt/lampp/htdocs/support'
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+    Server address: http://0.0.0.0:4000/support/
+  Server running... press ctrl-c to stop.
+^C]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ ^[[Abundle exec jekyll serve --host 0.0.0.0[C[K[K[K[K[K[K[K[K 785[K[K[KU85[K[K[K86.202.89.85[K6[20Pjekyll serve --port 8888bundle exec jekyll serve --host 86.202.89.86[K4
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+            Source: /opt/lampp/htdocs/support
+       Destination: /opt/lampp/htdocs/support/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+                    done in 2.885 seconds.
+ Auto-regeneration: enabled for '/opt/lampp/htdocs/support'
+Configuration file: /opt/lampp/htdocs/support/_config.yml
+[2017-03-20 15:17:13] WARN  TCPServer Error: Cannot assign requested address - bind(2)
+jekyll 3.4.2 | Error:  Cannot assign requested address - bind(2)
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ s
+s : commande introuvable
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ ls
+[0m[01;32mabout.md[0m       [01;32m_config.yml[0m  [01;32mfeed.xml[0m  Gemfile.lock  [34;42mimg[0m        [01;32mindex.html[0m  [34;42m_layouts[0m  [34;42m_posts[0m     [34;42m_sass[0m  typescript
+[01;34mbundler_stubs[0m  [34;42mcss[0m          [01;32mGemfile[0m   [01;32mgh-pages.iml[0m  [34;42m_includes[0m  [34;42mjs[0m          [34;42mpages[0m     [01;32mREADME.md[0m  [01;34m_site[0m  [01;34mvendor[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ nano è[K_config.yml 
+[?1049h[1;22r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[20;48H(B[0;7m[ Lecture du fichier ][3d(B[m[20;47H(B[0;7m[ Lecture de 24 lignes ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                        Fichier : _config.yml                                                       [3;1H(B[m# Welcome to Jekyll![4d#[5d# This config file is meant for settings that affect your whole blog, values[6d# which you are expected to set up once and rarely need to edit after that.[7d# For technical reasons, this file is *NOT* reloaded automatically when you use[8d# 'jekyll serve'. If you change this file, please restart the server process.[10d# Site settings[11dtitle: Développement web 2016 - Simplon Lyon[12demail: eghaumez@simplon.co[13ddescription: > # this means to ignore newlines until "baseurl:"[14;3HIn Code We Trust[15dbaseurl: "/support" # the subpath of your site, e.g. /blog[16durl: "https://simplyon2.github.io/support" # the base hostname & protocol for your site[17dtwitter_username: rxlabz[18dgithub_username:  simplyon2[21d(B[0;7m^G(B[m Aide[21;17H(B[0;7m^O(B[m Écrire[33G(B[0;7m^W(B[m Chercher     (B[0;7m^K(B[m Couper[65G(B[0;7m^J(B[m Justifier    (B[0;7m^C(B[m Pos. cur.    (B[0;7m^Y(B[m Page préc.[22d(B[0;7m^X(B[m Quitter[17G(B[0;7m^R(B[m Lire fich.   (B[0;7m^\(B[m Remplacer    (B[0;7m^U(B[m Coller[65G(B[0;7m^T(B[m Orthograp.   (B[0;7m^_(B[m Aller lig.   (B[0;7m^V(B[m Page suiv.[3d[6d[9d[12d[15d[16d[18d[15d[20d[K[12d[9d[6d[3d[6d[9d[12d[15d[18d[3;20r[20;1H[9S[1;22r[11;1H# Build settings[12dmarkdown: kramdown[13dkramdown:[14;3Hinput: GFM[15dhighlighter: pygments[16dgems:[17;3H- jemoji[12d[15d[18d[15d[12d[9d[6d[3d[2;19r[2;1H[9T[1;22r[3;1H# Welcome to Jekyll![4d#[5d# This config file is meant for settings that affect your whole blog, values[6d# which you are expected to set up once and rarely need to edit after that.[7d# For technical reasons, this file is *NOT* reloaded automatically when you use[8d# 'jekyll serve'. If you change this file, please restart the server process.[10d# Site settings[11dtitle: Développement web 2016 - Simplon Lyon[9d[6d[3d[6d[9d[12d[15d[18d[3;20r[20;1H[9S[1;22r[11;1H# Build settings[12dmarkdown: kramdown[13dkramdown:[14;3Hinput: GFM[15dhighlighter: pygments[16dgems:[17;3H- jemoji[12d[15d[18d[15d[?25l[20;30H(B[0;7m[ ligne 22/25 (88%), col. 1/22 (4%), car. 766/805 (95%) ][15d(B[m[?12l[?25h[16d[17d[18d[1;108H(B[0;7mModifié[3d(B[mserver_port: 4000[K[4dbaseurl:     /[K[5durl:         http://localhost:4000[6dsource:      .[K[7ddestination: ./_site[K[8dplugins:     ./_plugins[K[9dfuture:      true[K[10dmarkdown:    maruku[11dpermalink:   date[12d[K[13d[K[14d[K[15d[K[16d[K[17d[K[20d[K[11;18H[8d[5d[2;19r[2;1H[9T[1;22r[3;1Hmarkdown: kramdown[4dkramdown:[5;3Hinput: GFM[6dhighlighter: pygments[7dgems:[8;3H- jemoji[9dsafe:[9;14Hfalse[10dauto:[10;14Htrue[11dserver:[14Gfalse[8;11H[11;18H[8;11H[5dFM[2;19r[2;1H[9T[1;22r[3;1Hemail: eghaumez@simplon.co[4ddescription: > # this means to ignore newlines until "baseurl:"[5;3HIn Code We Trust[6dbaseurl: "/support" # the subpath of your site, e.g. /blog[7durl: "https://simplyon2.github.io/support" # the base hostname & protocol for your site[8dtwitter_username: rxlabz[9dgithub_username:  simplyon2[11d# Build settings[8d:[11d[14;13H[17d[3;20r[20;1H[9S[1;22r[11;1Hserver:[14Gfalse[12dserver_port: 4000[13dbaseurl:     /[14durl:[14;14Hhttp://localhost:4000[15dsource:[14G.[16ddestination: ./_site[17dplugins:     ./_plugins[18dfuture:[14Gtrue[19dmarkdown:    maruku[11;18H[14d[A[A000    [22;1H[?1049l[?1l>Utilisez « fg » pour revenir à nano.
+
+[1]+  Arrêté                nano _config.yml
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ nano _config.yml 
+[?1049h[1;22r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J[20d(B[0;7mLe fichier _config.yml est ouvert (par server avec nano 2.5.3, PID 30671) ; continuer ?                             [21;1H O(B[m Oui[22d(B[0;7m N(B[m Non[22;17H(B[0;7m^C(B[m Annuler[20;88H[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                           Nouvel espace                                                            [20;1H(B[m[K[21d(B[0;7m^G(B[m Aide[21;17H(B[0;7m^O(B[m Écrire[33G(B[0;7m^W(B[m Chercher     (B[0;7m^K(B[m Couper[65G(B[0;7m^J(B[m Justifier    (B[0;7m^C(B[m Pos. cur.    (B[0;7m^Y(B[m Page préc.[22d(B[0;7m^X(B[m Quitter[18G(B[0;7mR(B[m Lire fich.   (B[0;7m^\(B[m Remplacer    (B[0;7m^U(B[m Coller[65G(B[0;7m^T(B[m Orthograp.   (B[0;7m^_(B[m Aller lig.   (B[0;7m^V(B[m Page suiv.[3d[21d[J[22;116H[22;1H[?1049l[?1l>]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ ls
+[0m[01;32mabout.md[0m       [01;32m_config.yml[0m  [01;32mfeed.xml[0m  Gemfile.lock  [34;42mimg[0m        [01;32mindex.html[0m  [34;42m_layouts[0m  [34;42m_posts[0m     [34;42m_sass[0m  typescript
+[01;34mbundler_stubs[0m  [34;42mcss[0m          [01;32mGemfile[0m   [01;32mgh-pages.iml[0m  [34;42m_includes[0m  [34;42mjs[0m          [34;42mpages[0m     [01;32mREADME.md[0m  [01;34m_site[0m  [01;34mvendor[0m
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ exit
+déconnexion
+Il y a des tâches stoppées.
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ exit
+déconnexion
+[22;1H[?1049l[?1l>Réception de SIGHUP ou SIGTERM
+
+Espace écrit dans _config.yml.save
+]0;server@server-HP-Pro-3500-Series: /opt/lampp/htdocs/support[01;32mserver@server-HP-Pro-3500-Series[00m:[01;34m/opt/lampp/htdocs/support[00m$ exit
+exit
+
+Script terminé sur lun. 20 mars 2017 15:20:43 CET

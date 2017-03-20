@@ -1,0 +1,13 @@
+current directory: /opt/lampp/htdocs/support/vendor/bundle/ruby/2.4.0/gems/json-1.8.6/ext/json
+/home/server/.rvm/rubies/ruby-2.4.0/bin/ruby -r ./siteconf20170320-30838-1c8bxvt.rb extconf.rb
+creating Makefile
+
+current directory: /opt/lampp/htdocs/support/vendor/bundle/ruby/2.4.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /opt/lampp/htdocs/support/vendor/bundle/ruby/2.4.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: rien à faire pour « all ».
+
+current directory: /opt/lampp/htdocs/support/vendor/bundle/ruby/2.4.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
